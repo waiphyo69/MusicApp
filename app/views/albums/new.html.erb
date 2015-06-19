@@ -1,0 +1,7 @@
+<h1>Create Album</h1>
+<form action="<%= band_albums_url(@album.band_id) %>" method="post">
+
+  <%= render 'form', :album => @album, :bands => @bands %>
+
+  <button>Create Album</button>
+</form>

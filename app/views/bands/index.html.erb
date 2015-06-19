@@ -1,0 +1,17 @@
+<h1><b>Welcome to Wai's web music app<b></h1>
+<br>
+<br>
+<br>
+<img src="http://www.lovethispic.com/uploaded_images/9839-So-Much-Swag.gif?1" alt="lawl">
+<br>
+<br>
+<h1> All Bands Available </h1>
+<%@bands.each do |band| %>
+<ul>
+  <li><%=link_to band.name, band_url(band.id) %></li>
+  <li><%= link_to "Delete Band", band_url(band), method: :delete, class: 'btn' %></li>
+    <br>
+    <br>
+  <% end %>
+</ul>
+<%= link_to "Make a new band",new_band_url %>

@@ -1,0 +1,12 @@
+<h1>Current song: <b> <%=@track.name %> </b> </h1>
+  <br>
+  <br>
+  Song type: <%= @track.track_type %>
+  <br>
+  <br>
+  Song lyrics:
+  <br>
+  <textarea rows="10" cols="20"><%=@track.lyrics%></textarea>
+  <br>
+  <br>
+  <%=link_to "Up one level",album_url(@album) %>
